@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="ModernUI.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModernUI.View"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+             d:DesignHeight="580" d:DesignWidth="990">
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="660"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Options Child Content -->
+                    <StackPanel Grid.Column="0"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0,0,10,0">
+                        <RadioButton Style="{StaticResource optionChildContentButton}"
+                                     Tag="{StaticResource backgroundColorChild1}">
+                            <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Center">
+                                <fa:IconImage Icon="Users"
+                                          Style="{StaticResource optionChildButtonIcon}"/>
+                                <StackPanel>
+                                <TextBlock Text="Data title"
+                                           Style="{StaticResource optionChildButtonText}">
+                                </TextBlock>
+                                    <TextBlock Text="780"
+                                               FontSize="24"
+                                               Foreground="{StaticResource titleColor2}">
+                                    </TextBlock>
+                                </StackPanel>
+                                <fa:IconImage Icon="ChartLine"
+                                              Style="{StaticResource optionChildButtonIcon}"
+                                              Margin="0,0,-55,-20"
+                                              Height="50"
+                                              Width="50"/>
+                            </StackPanel>
+                        </RadioButton>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0,0,10,0">
+                        <RadioButton Style="{StaticResource optionChildContentButton}"
+                                     Tag="{StaticResource backgroundColorChild2}">
+                            <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Center">
+                                <fa:IconImage Icon="TruckFast"
+                                          Style="{StaticResource optionChildButtonIcon}"/>
+                                <StackPanel>
+                                    <TextBlock Text="Data title"
+                                           Style="{StaticResource optionChildButtonText}">
+                                    </TextBlock>
+                                    <TextBlock Text="4,780"
+                                               FontSize="24"
+                                               Foreground="{StaticResource titleColor2}">
+                                    </TextBlock>
+                                </StackPanel>
+                                <fa:IconImage Icon="ChartColumn"
+                                              Style="{StaticResource optionChildButtonIcon}"
+                                              Margin="0,0,-55,-20"
+                                              Height="50"
+                                              Width="50"/>
+                            </StackPanel>
+                        </RadioButton>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0,0,10,0">
+                        <RadioButton Style="{StaticResource optionChildContentButton}"
+                                     Tag="{StaticResource backgroundColorChild3}">
+                            <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Center">
+                                <fa:IconImage Icon="Users"
+                                          Style="{StaticResource optionChildButtonIcon}"/>
+                                <StackPanel>
+                                    <TextBlock Text="Data title"
+                                           Style="{StaticResource optionChildButtonText}">
+                                    </TextBlock>
+                                    <TextBlock Text="1,780"
+                                               FontSize="24"
+                                               Foreground="{StaticResource titleColor2}">
+                                    </TextBlock>
+                                </StackPanel>
+                                <fa:IconImage Icon="ChartArea"
+                                              Style="{StaticResource optionChildButtonIcon}"
+                                              Margin="0,0,-55,-20"
+                                              Height="50"
+                                              Width="50"/>
+                            </StackPanel>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Grid FlowDirection="RightToLeft">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <Border FlowDirection="LeftToRight">
+                            <TextBlock Text="Colum chart title"
+                                       Foreground="{StaticResource titleColor3}"
+                                       FontSize="20"
+                                       Margin="10,0,0,0"></TextBlock>
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                    <Setter Property="Height" Value="170"/>
+                                    <Setter Property="Background" Value="#210F55"/>
+                                    <Setter Property="Margin" Value="10,10,0,0"/>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Border>
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                    <Setter Property="Height" Value="170"/>
+                                    <Setter Property="Background" Value="#210F55"/>
+                                    <Setter Property="Margin" Value="10,10,0,0"/>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
